@@ -2,6 +2,12 @@ import React, { useEffect, useState } from 'react';
 
 import { Card, FormField, Loader } from '../components';
 
+const RenderCards = ({data, title}) => {
+  if(data?.lenght > 0) 
+  return data.map((post) => <Card key={post._id} {...post} />)
+
+}
+
 const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
@@ -30,6 +36,9 @@ const Home = () => {
                 Showing results for <span className='text-[#222328]'>{searchText}</span>
               </h2>
             )}
+            <div className='grid lg:grid-cols-4 sm:grid-col-3 xs:grid-cols-2 grid-cols-1 gap-3'>
+
+            </div>
           </>
         ) }
       </div>
