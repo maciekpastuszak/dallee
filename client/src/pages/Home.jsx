@@ -18,7 +18,7 @@ const Home = () => {
       </div>
 
       <div className='mt-10'>
-        {Loading ? (
+        {loading ? (
            <div className="flex justify-center items-center">
               <Loader />
           </div>
