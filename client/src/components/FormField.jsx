@@ -4,7 +4,12 @@ const FormField = ({ labelName, type, name, placeholder, value, handleChange, is
   return (
     <div>
       <div className="flex items-center gap-2 mb-2">
+        <label 
+          htmlFor={name}
+          className="block text-sm font-medium text-grey-900"
+        >
 
+        </label>
       </div>
     </div>
   )
