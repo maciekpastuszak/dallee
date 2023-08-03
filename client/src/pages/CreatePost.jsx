@@ -79,7 +79,7 @@ const CreatePost = () => {
                 type="button"
                 onClick={generateImage}
               >
-                {generateImage ? 'Generating...': 'Generate'}
+                {generatingImg ? 'Generating...': 'Generate'}
               </button>
         </div>
       </form>
