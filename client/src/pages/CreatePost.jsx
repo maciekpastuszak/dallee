@@ -69,11 +69,11 @@ const CreatePost = () => {
           <FormField 
             labelName="Prompt"
             type="text"
-            name="name"
+            name="prompt"
             placeholder="A plush toy robot sitting against a yellow wall"
             value={form.prompt}
             handleChange={handleChange}
-            isSupriseMe
+            isSurpriseMe
             handleSurpriseMe={handleSurpriseMe}
           />
 
