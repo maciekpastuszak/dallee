@@ -18,7 +18,7 @@ const Home = () => {
   const [allPosts, setAllPosts] = useState(null);
 
   const [searchText, setSearchText] = useState('');
-  const [setsearchedResults, setSearchedResults] = useState(null);
+  const [searchedResults, setSearchedResults] = useState(null);
   const [searchTimeout, setSearchTimeout] = uSeState(null);
 
   useEffect(() => {
@@ -94,7 +94,7 @@ const Home = () => {
             <div className='grid lg:grid-cols-4 sm:grid-col-3 xs:grid-cols-2 grid-cols-1 gap-3'>
               {searchText ? (
                 <RenderCards 
-                  data={[]}
+                  data={searchedResults}
                   title="No search results found"
                 />
                ) : (
