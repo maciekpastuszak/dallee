@@ -48,6 +48,7 @@ const Home = () => {
   }, [])
   
   const handleSearchChange = (e) => {
+    clearTimeout(searchTimeout);
     setSearchText(e.target.value);
 
     setSearchTimeout(
@@ -68,7 +69,9 @@ const Home = () => {
       </div>
 
       <div className='mt-16'>
-        <FormField />
+        <FormField 
+          
+        />
       </div>
 
       <div className='mt-10'>
